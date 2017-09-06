@@ -5,7 +5,8 @@ import Form from "react-jsonschema-form";
 import JSZip from 'jszip';
 
 // data
-import data from './data/advanced.config';
+//import data from './data/advanced.config';
+import data from './data/example.config';
 import schema from './schema';
 
 
