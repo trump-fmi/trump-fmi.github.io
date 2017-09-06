@@ -1,4 +1,4 @@
-## __T__ile __R__otating __U__niversal __M__ap __P__resentation
+**T**ile **R**otating **U**niversal **M**ap **P**resentation
 
 This tool provides simple configuration for the TRUMP label pipeline.
 
