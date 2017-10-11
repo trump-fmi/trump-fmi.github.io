@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Link
+  NavLink
 } from 'react-router-dom'
 
 class Navigation extends Component {
@@ -40,24 +40,24 @@ class Navigation extends Component {
             </div>
             <div className="navbar-collapse collapse" id="navbar-main">
               <ul className="nav navbar-nav">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/guide" >Guides</Link></li>
+                <li><NavLink to="/">Home</NavLink></li>
+                <li><NavLink to="/guide" >Guides</NavLink></li>
                 {/* <li className={DropDownClassName} tabIndex="0"
                   // onBlur={ e => {e.stopPropagation(); this.setState({open:false})} }
                   >
-                  <Link className="dropdown-toggle" to="/guide" onClick={this.toggleMenu} >Guides <span className="caret" /></Link>
+                  <NavLink className="dropdown-toggle" to="/guide" onClick={this.toggleMenu} >Guides <span className="caret" /></NavLink>
                   <ul className="dropdown-menu" aria-labelledby="themes">
-                    <li><Link className="dropdown-toggle" to="/guide/getting-started" onClick={this.closeMenu}>Getting Started</Link></li>
+                    <li><NavLink className="dropdown-toggle" to="/guide/getting-started" onClick={this.closeMenu}>Getting Started</NavLink></li>
                     <li className="divider" />
-                    <li><Link className="dropdown-toggle" to="/guide/installation"  onClick={this.closeMenu}>Installation</Link></li>
-                    <li><Link className='dropdown-toggle' to={`/guide/label-pipeline`}  onClick={this.closeMenu}>Label Pipeline</Link></li>
-                    <li><Link className='dropdown-toggle' to={`/guide/tile-server-installation`}  onClick={this.closeMenu}>Tile-Server Installation</Link></li>
-                    <li><Link className="dropdown-toggle" to="/guide/migration"  onClick={this.closeMenu}>Migration</Link></li>
-                    <li><Link className="dropdown-toggle" to="/guide/client"  onClick={this.closeMenu}>Client</Link></li>
+                    <li><NavLink className="dropdown-toggle" to="/guide/installation"  onClick={this.closeMenu}>Installation</NavLink></li>
+                    <li><NavLink className='dropdown-toggle' to={`/guide/label-pipeline`}  onClick={this.closeMenu}>Label Pipeline</NavLink></li>
+                    <li><NavLink className='dropdown-toggle' to={`/guide/tile-server-installation`}  onClick={this.closeMenu}>Tile-Server Installation</NavLink></li>
+                    <li><NavLink className="dropdown-toggle" to="/guide/migration"  onClick={this.closeMenu}>Migration</NavLink></li>
+                    <li><NavLink className="dropdown-toggle" to="/guide/client"  onClick={this.closeMenu}>Client</NavLink></li>
                   </ul>
                 </li> */}
-                <li><Link to="/configurator">Configurator</Link></li>
-                <li><Link to="/about">About</Link></li>
+                <li><NavLink to="/configurator">Configurator</NavLink></li>
+                <li><NavLink to="/about">About</NavLink></li>
               </ul>
               {/* <ul className="nav navbar-nav navbar-right">
                 <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
