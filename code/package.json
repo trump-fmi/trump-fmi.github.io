@@ -15,8 +15,9 @@
     "react-router-dom": "^4.2.2"
   },
   "scripts": {
+    "cleanup": "rm ../favicon.ico; rm ../index.html; rm ../manifest.json; rm ../asset-manifest.json; rm ../service-worker.js; rm -rf ../static;",
     "start": "react-scripts start",
-    "build": "react-scripts build; mv build/* ../; rm -rf build",
+    "build": "npm run cleanup; react-scripts build; mv build/* ../; rm -rf build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
