@@ -27,7 +27,7 @@ class Configurator extends Component {
       <div>
         <Route path={`${match.url}/examples/:pageSlug`} component={ExampleConfigurations}/>
         <Route exact path={match.url} render={() => (
-          <Redirect to="/guide/getting-started" />
+          <Redirect to="/configurator/examples/simple" />
       )}/>
     </div>
     );

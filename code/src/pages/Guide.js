@@ -15,6 +15,8 @@ const SubNavigation = ({match}) => {
     <div className="list-group table-of-contents">
       <NavLink className='list-group-item' to={`${match.url}/getting-started`}>Getting Started</NavLink>
       <NavLink className='list-group-item' to={`${match.url}/installation`}>Installation</NavLink>
+      <NavLink className='list-group-item' to={`${match.url}/label-pipeline`}>Label Pipeline</NavLink>
+      <NavLink className='list-group-item' to={`${match.url}/tile-server-installation`}>Tile-Server Installation</NavLink>
       <NavLink className='list-group-item' to={`${match.url}/migration`}>Migration</NavLink>
       <NavLink className='list-group-item' to={`${match.url}/client`}>Client</NavLink>
     </div>

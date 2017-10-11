@@ -49,6 +49,8 @@ class Navigation extends Component {
                     <li><Link className="dropdown-toggle" to="/guide/getting-started" onClick={this.closeMenu}>Getting Started</Link></li>
                     <li className="divider" />
                     <li><Link className="dropdown-toggle" to="/guide/installation"  onClick={this.closeMenu}>Installation</Link></li>
+                    <li><Link className='dropdown-toggle' to={`/guide/label-pipeline`}>Label Pipeline</Link></li>
+                    <li><Link className='dropdown-toggle' to={`/guide/tile-server-installation`}>Tile-Server Installation</Link></li>
                     <li><Link className="dropdown-toggle" to="/guide/migration"  onClick={this.closeMenu}>Migration</Link></li>
                     <li><Link className="dropdown-toggle" to="/guide/client"  onClick={this.closeMenu}>Client</Link></li>
                   </ul>
