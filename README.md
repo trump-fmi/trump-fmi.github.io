@@ -1,7 +1,7 @@
 **T**ile **R**otating **U**niversal **M**ap **P**resentation
 
-This tool provides simple configuration for the TRUMP label pipeline.
+Entrypoint to the TRUMP project.
 
 to be continued...
 
-[Demo](https://trump-fmi.github.io/trump-tool/)
+[Demo](https://trump-fmi.github.io/)
