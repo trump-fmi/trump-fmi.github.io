@@ -4,10 +4,16 @@ import fields from "react-jsonschema-form-extras";
 import JSZip from 'jszip';
 
 // data
-// import data from '../data/advanced.config';
-import data from './data/example.config';
+import advanced from '../data/advanced.config.js';
+import simple from '../data/example.config.js';
+
 import schema from '../schema';
 import ui from '../ui';
+
+const configs = {
+  advanced,
+  simple
+}
 
 const download = (data) => {
 
@@ -34,7 +40,11 @@ const download = (data) => {
 
 }
 
-const Tool = () => (
+const Tool = ({match}) => {
+
+  const data = configs[match.params.config];
+
+  return (
 <Form schema={schema}
         fields = {fields}
         formData={data}
@@ -47,6 +57,6 @@ const Tool = () => (
           <button type="submit" className="btn btn-success">ZIP generieren</button>
         </div>
       </Form>
-);
+)};
 
 export default Tool;
