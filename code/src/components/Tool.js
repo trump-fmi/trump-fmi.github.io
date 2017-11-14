@@ -1,10 +1,11 @@
 import React from 'react';
 import Form from "react-jsonschema-form";
+import fields from "react-jsonschema-form-extras";
 import JSZip from 'jszip';
 
 // data
-import data from '../data/advanced.config';
-// import data from './data/example.config';
+// import data from '../data/advanced.config';
+import data from './data/example.config';
 import schema from '../schema';
 import ui from '../ui';
 
@@ -35,6 +36,7 @@ const download = (data) => {
 
 const Tool = () => (
 <Form schema={schema}
+        fields = {fields}
         formData={data}
         uiSchema={ui}
         // onChange={log("changed")}
