@@ -10,7 +10,7 @@ var renderer = new marked.Renderer();
 
 // helper function
 async function getMD(path){
-  let res = await fetch(`/content/${path}.md`, {cache: "force-cache"});
+  let res = await fetch(`https://trump-fmi.github.io/content/${path}.md`, {cache: "force-cache"});
   let content = await res.text();
   return marked(content, {renderer: renderer});
 };
