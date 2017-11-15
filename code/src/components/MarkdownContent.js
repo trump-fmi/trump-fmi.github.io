@@ -8,6 +8,18 @@ var renderer = new marked.Renderer();
 //   return '<a href="#" >asdasd</a>';
 // };
 
+renderer.table = function (header, body) {
+
+  return '<table class="table table-striped">\n'
+   + '<thead>\n'
+   + header
+   + '</thead>\n'
+   + '<tbody>\n'
+   + body
+   + '</tbody>\n'
+   + '</table>\n';
+}
+
 // helper function
 async function getMD(path){
   let res = await fetch(`https://trump-fmi.github.io/content/${path}.md`, {cache: "force-cache"});
