@@ -21,7 +21,7 @@ determined in the config file.
 
 # Config
 The config is written in the json format. In the following there will
-always be presentetd part of the config and a description afterwards.
+always be presented part of the config and a description afterwards.
 
 ``` json
 {
@@ -41,7 +41,7 @@ The config starts with the name of the output file and a description.
 ```
 
 The label_split attribute defines how long a label has to be to be
-splitted and which characters can be used as a splitting bound.
+split and which characters can be used as a splitting bound.
 
 ``` json
 		"font" : {
@@ -93,7 +93,7 @@ on the frontend.
 
 In the mapping a definitions is made how each label should be
 displayed by sorting them into levels . All labels belong to the
-toplevel (here "OSM_LEVEL"). In each sublevel new constraints can be
+top level (here "OSM_LEVEL"). In each sublevel new constraints can be
 added and only labels conforming to these constraints become part of
 the sublevel. The "tag" constraint means that the labels have to
 contain the specified tag.
@@ -135,7 +135,7 @@ Numerical values can be filter by size with the greater constraint.
 ```
 
 
-The labels of a certian level can be increased in size by using the
+The labels of a certain level can be increased in size by using the
 factor attribute.
 
 
@@ -160,7 +160,7 @@ factor attribute.
 				"icon": "school"
 ```
 
- A level can of course contian more than one constraint. A label
+ A level can of course contain more than one constraint. A label
  belongs to the level if one of the given constraints match. Instead
  of a label an icon can be specified. The text can be chosen
  freely. It is the responsibility of the frontend to interpret the string.

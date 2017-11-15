@@ -81,7 +81,7 @@ Example config could look like this:
 
 ``` json
 [{"name" : "citynames", "path" : "bremen-latest.osm.pbf.ce"},
- {"name" : "bycicle"  , "path" : "bycicle.ce" }]
+ {"name" : "bicycle"  , "path" : "bicycle.ce" }]
 ```
 
 
