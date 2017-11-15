@@ -32,7 +32,7 @@ const Guide = ({match}) => {
         <div className= 'col-lg-9 col-md-9 col-sm-8'>
           <Route path={`${match.url}/:pageSlug`} component={Page}/>
           <Route exact path={match.url} render={() => (
-            <Redirect to="/guide/getting-started" />
+            <Redirect to="/guide/installation" />
           )}/>
         </div>
       </div>
