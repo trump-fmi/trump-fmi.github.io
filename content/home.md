@@ -1,4 +1,4 @@
-![trump-logo](https://rawgit.com/trump-fmi/trump-fmi.github.io/master/content/logo_blue.png "Logo Title Text 1")
+![trump-logo](https://rawgit.com/trump-fmi/trump-fmi.github.io/tree/master/content/logo_blue.png "Logo Title Text 1")
 
 TRUMP (**T**ile **R**otating **U**niversal **M**ap **P**resentation) is a project that aims to bring rotation invariant vector labeling to map representations. The goal is to display the same labels to the viewer regardless of current rotation to benefit the user's ability to navigate.
 
