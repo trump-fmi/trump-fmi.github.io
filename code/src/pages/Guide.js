@@ -13,10 +13,10 @@ const Page = ({match}) => (
 const SubNavigation = ({match}) => {
     return (
 	    <div className="list-group table-of-contents">
+            <NavLink className='list-group-item' to={`${match.url}/overview`}>Overview</NavLink>
 	    <NavLink className='list-group-item' to={`${match.url}/osm_label_server`}>OSM Label Server</NavLink>
 	    <NavLink className='list-group-item' to={`${match.url}/label-pipeline`}>Label Pipeline</NavLink>
 	    <NavLink className='list-group-item' to={`${match.url}/tile-server-installation`}>Tile-Server Installation</NavLink>
-	    <NavLink className='list-group-item' to={`${match.url}/migration`}>Migration</NavLink>
 	    <NavLink className='list-group-item' to={`${match.url}/client`}>Client</NavLink>
 	    </div>
     )
@@ -32,7 +32,7 @@ const Guide = ({match}) => {
             <div className= 'col-lg-9 col-md-9 col-sm-8'>
             <Route path={`${match.url}/:pageSlug`} component={Page}/>
             <Route exact path={match.url} render={() => (
-		    <Redirect to="/guide/installation" />
+		    <Redirect to="/guide/overview" />
             )}/>
             </div>
 	    </div>

@@ -3,11 +3,11 @@ import MarkdownContent from '../components/MarkdownContent';
 
 class Home extends Component {
 
-  render() {
-    return (
-      <MarkdownContent file={'about'} />
-    );
-  }
+    render() {
+	return (
+	    //<MarkdownContent file={'about'} /> 
+	);
+    }
 
 }
 
